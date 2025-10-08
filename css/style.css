@@ -73,19 +73,6 @@ footer {
   flex-wrap: wrap;
 }
 
-.about-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-}
-
-.about-text {
-  flex: 1;
-  min-width: 250px;
-}
-
 /* Adjust text for readability */
 .about-text h2 {
   margin-top: 0;
@@ -101,4 +88,31 @@ footer {
     margin: 0 auto 1.5rem auto;
   }
 }
+
+/* Better spacing for About section */
+#about-section {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Scale image better and align vertically */
+.about-photo {
+  width: 160px;          /* smaller width */
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;    /* small balance offset */
+}
+
+/* Center and limit bio width for cleaner look */
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  max-width: 550px;
+  line-height: 1.7;
+}
+
+
 
