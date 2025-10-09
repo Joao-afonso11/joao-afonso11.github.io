@@ -114,5 +114,104 @@ footer {
   line-height: 1.7;
 }
 
+/* ---------- SELECTED PUBLICATIONS (INDEX PAGE) ---------- */
 
+.publications {
+  text-align: center;
+  margin-top: 3rem;
+}
 
+.publications h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #003366;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+/* Publication grid layout */
+.pub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Individual publication card */
+.pub-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pub-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Thumbnail image */
+.pub-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Publication title and text */
+.pub-card h3 {
+  font-size: 1rem;
+  color: #111;
+  margin: 0.5rem 0;
+}
+
+.pub-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Links under publications */
+.pub-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.pub-links a {
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: white;
+  transition: background 0.3s;
+}
+
+.pub-links .pdf {
+  background-color: #003366;
+}
+
+.pub-links .pdf:hover {
+  background-color: #00264d;
+}
+
+.pub-links .cite {
+  background-color: #777;
+}
+
+.pub-links .cite:hover {
+  background-color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .pub-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
