@@ -98,8 +98,8 @@ footer {
 
 /* Scale image better and align vertically */
 .about-photo {
-  width: 200px;          /* smaller width */
-  height: 200px;
+  width: 250px;          /* smaller width */
+  height: 250px;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
