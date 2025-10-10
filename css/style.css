@@ -155,8 +155,8 @@ footer {
 
 /* Thumbnail image */
 .pub-card img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
